@@ -1,7 +1,7 @@
 
 import axios from 'axios'
 import { Message } from 'element-ui'
-import { router } from "../router";
+import router  from "../router";
 
 // 相应拦截器
 axios.interceptors.response.use(res => {
@@ -23,7 +23,6 @@ axios.interceptors.response.use(res => {
         Message.error({ message: res.data.message })
     }
 }, error => {
-
     Message.error({ message: "未知错误" })
     return;
 })
