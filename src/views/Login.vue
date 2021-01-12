@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-form class="loginContainer" ref="form" :model="form" :rules="rules">
-      <h3 class="loginTitle">系统登陆</h3>
+      <h1 class="loginTitle">系统登陆</h1>
       <el-form-item prop="username">
         <el-input
           v-model="form.username"
