@@ -10,11 +10,11 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.config.productionTip = false
 Vue.use(ElementUI);
 
-Vue.prototype.postRequst = postRequst
+// Vue.prototype.postRequst = postRequest
 
 
 router.beforeEach((to, from, next) => {
-
+  next()
 })
 
 new Vue({
